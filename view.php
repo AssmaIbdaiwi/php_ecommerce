@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-        <!-- <nav class="navbar navbar-expand-sm bg #912599 navbar-dark "  > -->
+    <!-- <nav class="navbar navbar-expand-sm bg #912599 navbar-dark "  > -->
     <!-- Brand/logo -->
     <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #9125999c ;">
         <a class="navbar-brand" href="#">
@@ -43,10 +43,10 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Add product</a>
+                    <a class="nav-link" href="http://localhost/php_ecommerce/add.php?name=hello&price=1&img=librarian-scaled.jpg&description=w&add=">Add product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">View product</a>
+                    <a class="nav-link" href="http://localhost/php_ecommerce/view.php#">View product</a>
                 </li>
 
             </ul>
@@ -60,7 +60,8 @@
     <!-- ********************end nav bar*********************************** -->
 
     <!-- **************cards************************** -->
-    
+    <div style="display: flex; justify-content :center; margin-top:20px; margin-bottom:20px; color:#B03EC1">
+    <h2 >Books list</h2> </div>
     <?php 
 
   $name =explode("<br>",$_SESSION['name']);
@@ -73,10 +74,8 @@
     
 echo(
 
-'    <div style="display: flex; justify-content :center; margin-top:20px; margin-bottom:20px ;color:#B03EC1">
-    <h2 >Books list</h2>
-    </div>
-    <div class="container">
+' <div style="display: inline-block;">
+<div class="container">
   <div class="card" style="width:400px">
 
  <img class="card-img-top" src="pic/71NFcRl66bL.jpg" alt="Card image" style="width:100%">
@@ -86,7 +85,8 @@ echo(
       <p class="card-text"style="color:#B03EC1">'.$description[$i].'</p>
       <p class="card-text"style="color:#B03EC1">'.$price[$i].'</p>
     </div>
-  </div>
+    </div>
+    </div>
 </div>')
 
 ;}

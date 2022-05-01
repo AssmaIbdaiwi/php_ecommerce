@@ -83,20 +83,7 @@
 <!-- ***end form*** -->
 
 <!-- ********************************table*************** -->
-
-<?php 
-
-if (isset($_POST['add'])){
-$_SESSION['name'] =$_POST['name'];
-$_SESSION['price']=$_POST['price'];
-$_SESSION['image']=$_POST['image'];
-$_SESSION['description']=$_POST['description'];
-
-
-    echo (
-        
-        
- '       <div class="table" style=" display:flex;justify-content:center; margin-top: 15px;">
+<div class="table" style=" display:flex;justify-content:center; margin-top: 15px;">
     <table class="table" style="width: 800px;">
         <thead class="thead-light">
           <tr>
@@ -107,20 +94,27 @@ $_SESSION['description']=$_POST['description'];
           </tr>
         </thead>
         
-        
-        
-        
-         <tbody>
-          <tr>
-            <td>'  .$_SESSION['name'].'</td>
-            <td>' .$_SESSION['image'].'</td>
-            <td> '.$_SESSION['price'] .'</td>
-            <td>' .$_SESSION['description'].'</td>
-          </tr>
-        </tbody>');}
-  ?>
-        </table>
-    </div>
+<?php
+
+
+if(isset($_POST['add'])){
+$_SESSION['name'] .=$_POST['name'] .'<br>';
+$_SESSION['price'] .=$_POST['price'].'<br>';
+$_SESSION['description'] .=$_POST['description'].'<br>';
+$_SESSION['image'] .=$_POST['image'].'<br>';
+
+
+$name=$_POST['name'];
+$price=$_POST['price'];
+$desc=$_POST['description'];
+$image=$_POST['image'];
+
+echo ('<tr style="background-color:#f9fcfd;  " ><td>' . $_SESSION['name'] . '</td><td><img src="/image/' . $_SESSION['image'] . '"></td><td>' . $_SESSION['price'] . '</td><td>' . $_SESSION['description']. '</td></tr>');
+}
+
+?>
+  </tbody>
+</table>
 </div>
 <!-- **********************************footer*** -->
     <footer class="footer-48201" style=" margin-top: 100px; background-color: #9125999c ;" >
