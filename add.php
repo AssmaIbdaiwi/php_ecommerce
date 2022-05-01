@@ -1,3 +1,5 @@
+<?php session_start();
+// session_unset()?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,19 +84,6 @@
 
 <!-- ********************************table*************** -->
 
-<!-- <div class="table" style=" display:flex;justify-content:center; margin-top: 15px;">
-    <table class="table" style="width: 800px;">
-        <thead class="thead-light">
-          <tr>
-            <th>Name</th>
-            <th>Image</th>
-            <th>Price</th>
-            <th>Description</th>
-          </tr>
-        </thead> -->
-
-
-<!-- **************************************** -->
 <?php 
 
 if (isset($_POST['add'])){

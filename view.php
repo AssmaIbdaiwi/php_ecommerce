@@ -1,3 +1,9 @@
+
+<?php session_start();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +17,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- ********** -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- *************************** -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ********** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -54,6 +60,7 @@
     <!-- ********************end nav bar*********************************** -->
 
     <!-- **************cards************************** -->
+    
     <?php 
 
   $name =explode("<br>",$_SESSION['name']);
@@ -61,7 +68,7 @@
   $description =explode("<br>",$_SESSION['description']);
   $image =explode("<br>",$_SESSION['image']);
   
-  for($i=0;$i<count($name)-1;$i++ ){
+  for($i=0;$i<count($name);$i++ ){
   
     
 echo(
@@ -71,12 +78,13 @@ echo(
     </div>
     <div class="container">
   <div class="card" style="width:400px">
-  <div>'.$image[$i].'</div>
+
+ <img class="card-img-top" src="pic/71NFcRl66bL.jpg" alt="Card image" style="width:100%">
  
    <div class="card-body">
-      <h4 class="card-title">'.$name[$i].'</h4>
-      <p class="card-text">'.$description[$i].'</p>
-      <p class="card-text">'.$price[$i].'</p>
+      <h4 class="card-title" style="color:#B03EC1">'.$name[$i].'</h4>
+      <p class="card-text"style="color:#B03EC1">'.$description[$i].'</p>
+      <p class="card-text"style="color:#B03EC1">'.$price[$i].'</p>
     </div>
   </div>
 </div>')
