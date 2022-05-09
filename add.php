@@ -56,27 +56,27 @@
     <!-- <div>
           <img src="pic/librarian-scaled.jpg">
       </div> -->
-    <div style="display: flex; justify-content: center; margin-top: 100px; ">
-        <div class="add" style="display: flex; justify-content: center; border:solid #91259958 2px; width: 600px; ">
-            <form action="add.php" method="POST" >
-                <div class="form-group">
-                    <label for="name" style="padding: 15px;">Add product name</label> <br>
-                    <input type="text" class="name" id="name" placeholder="Herry Potter" style="width: 400px;" name="name" required>
+    <div class="col-sm" style="display: flex; justify-content: center; margin-top: 100px; ">
+        <div class="col-xsm" style="display: flex; justify-content: center; border:solid #91259958 2px; width: 60% ">
+            <form class="col-sm"  action="add.php" method="POST" >
+                <div class="form-group ">
+                    <label for="name" class="col-sm" style="padding: 15px;">Add product name</label> <br>
+                    <input type="text" class="col-sm" id="name" placeholder="Harry Potter" style="width: 95%;" name="name" required>
                 </div>
-                <div class="form-group">
-                    <label for="price" style="padding: 15px;">Add product price</label> <br>
-                    <input type="number" class="price" id="price" placeholder="10" style="width: 400px;"name="price" required>
+                <div class="form-group col-sm">
+                    <label for="price" class="col-sm" style="padding: 15px;">Add product price</label> <br>
+                    <input type="number" class="col-sm" id="price" placeholder="10" style="width: 95%;"name="price" required>
                 </div>
-                <div class="form-group">
-                    <label for="img">Add image</label><br>
-                    <input type="file" class="img" id="img" name="image" required>
+                <div class="form-group col-sm">
+                    <label for="img" class="col-sm">Add image</label><br>
+                    <input type="file" class="col-sm" id="img" name="image" required>
                 </div>
-                <div class="form-group">
-                    <label for="description" style="padding: 15px;">Product description</label><br>
-                    <textarea class="description" id="description" rows="4" cols="70" name="description" ></textarea>
+                <div class="form-group col-sm">
+                    <label for="description" class="col-sm" style="padding: 15px;">Product description</label><br>
+                    <textarea class="col-sm" id="description" rows="4" cols="70" name="description" ></textarea>
                 </div>
-                <button class="btn btn" type="submit" name="add" style="background-color: #d0a9d2ac ; color:white ; margin-bottom: 15px;">Add</button>
-                <button class="btn btn" type="button" name="view" style="background-color: #d0a9d2ac ; color:white ; margin-bottom: 15px;"><a href ="view.php" style="color:white">View</a></button>
+                <button class="btn btn " type="submit" name="add" style="background-color: #9125999c ; color:white ; margin-bottom: 15px;">Add</button>
+                <button class="btn btn " type="button" name="view" style="background-color: #9125999c ; color:white ; margin-bottom: 15px;"><a href ="view.php" style="color:white">View</a></button>
             </form>
         </div>
     </div>
@@ -120,27 +120,27 @@ echo ('<tr style="background-color:#f9fcfd;  " ><td>' . $_SESSION['name'] . '</t
     <footer class="footer-48201" style=" margin-top: 100px; background-color: #9125999c ;" >
         <div class="container" >
             <div class="row" >
-                <div class="col-md-4 pr-md-5"style=" margin-top: 40px;">
+                <div class="col-sm-4 pr-sm-5"style=" margin-top: 40px;">
                     <a href="#" class="footer-site-logo d-block mb-4" style="color: white;">Booky</a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quasi perferendis ratione
                         perspiciatis accusantium.</p>
                 </div>
-                <div class="col-md"style=" margin-top: 40px;">
+                <div class="col-sm"style=" margin-top: 40px;">
                     <ul class="list-unstyled nav-links">
                         <li><a href="#"style="color: white;" >Home</a></li>
                         <li><a href="#"style="color: white;">Add product</a></li>
-                        <li><a href="#"style="color: white;">View product</a></li>
+                        <li><a href="http://localhost/php_ecommerce/view.php#"style="color: white;">View product</a></li>
 
                 </div>
 
-                <div class="col-md"style=" margin-top: 40px;">
+                <div class="col-sm"style=" margin-top: 40px;">
                     <ul class="list-unstyled nav-links">
                         <li><a href="#"style="color: white;">Privacy Policy</a></li>
                         <li><a href="#"style="color: white;">Terms &amp; Conditions</a></li>
                         <li><a href="#"style="color: white;">Partners</a></li>
                     </ul>
                 </div>
-                <div class="col-md text-md-center" style=" margin-top: 40px; ">
+                <div class="col-sm text-sm-center" style=" margin-top: 40px; ">
                     <ul class="social list-unstyled" style="display: flex; justify-content: space-between; ">
                         <li><a href="#"style="color: white;"><i class="fa fa-facebook-official" style="font-size:24px"></i></a></li>
                         <li><a href="#"style="color: white;"><i class="fa fa-twitter-square" style="font-size:24px"></i></a></li>

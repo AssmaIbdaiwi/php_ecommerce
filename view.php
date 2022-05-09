@@ -68,22 +68,22 @@
   $price =explode("<br>",$_SESSION['price']);
   $description =explode("<br>",$_SESSION['description']);
   $image =explode("<br>",$_SESSION['image']);
-  
-  for($i=0;$i<count($name);$i++ ){
+
+  for($i=0;$i<count($name)-1;$i++ ){
   
     
 echo(
 
 ' <div style="display: inline-block;">
-<div class="container">
-  <div class="card" style="width:400px">
+<div class="container ">
+  <div class="card " style="width: 35vw; margin-bottom:10px">
 
- <img class="card-img-top" src="pic/71NFcRl66bL.jpg" alt="Card image" style="width:100%">
+ <img class="card-img-top " src="pic/71NFcRl66bL.jpg" alt="Card image" >
  
    <div class="card-body">
-      <h4 class="card-title" style="color:#B03EC1">'.$name[$i].'</h4>
-      <p class="card-text"style="color:#B03EC1">'.$description[$i].'</p>
-      <p class="card-text"style="color:#B03EC1">'.$price[$i].'</p>
+      <h4 class="card-title " style="color:#B03EC1">'.$name[$i].'</h4>
+      <p class="card-text "style="color:#B03EC1">'.$description[$i].'</p>
+      <p class="card-text "style="color:#B03EC1">'.$price[$i].'</p>
     </div>
     </div>
     </div>
@@ -97,12 +97,12 @@ echo(
 <footer class="footer-48201" style=" margin-top: 100px; background-color: #9125999c ;" >
         <div class="container" >
             <div class="row" >
-                <div class="col-md-4 pr-md-5"style=" margin-top: 40px;">
+                <div class="col-sm-4 pr-sm-5"style=" margin-top: 40px;">
                     <a href="#" class="footer-site-logo d-block mb-4" style="color: white;">Booky</a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quasi perferendis ratione
                         perspiciatis accusantium.</p>
                 </div>
-                <div class="col-md"style=" margin-top: 40px;">
+                <div class="col-sm"style=" margin-top: 40px;">
                     <ul class="list-unstyled nav-links">
                         <li><a href="#"style="color: white;" >Home</a></li>
                         <li><a href="#"style="color: white;">Add product</a></li>
@@ -110,14 +110,14 @@ echo(
 
                 </div>
 
-                <div class="col-md"style=" margin-top: 40px;">
+                <div class="col-sm"style=" margin-top: 40px;">
                     <ul class="list-unstyled nav-links">
                         <li><a href="#"style="color: white;">Privacy Policy</a></li>
                         <li><a href="#"style="color: white;">Terms &amp; Conditions</a></li>
                         <li><a href="#"style="color: white;">Partners</a></li>
                     </ul>
                 </div>
-                <div class="col-md text-md-center" style=" margin-top: 40px; ">
+                <div class="col-sm text-sm-center" style=" margin-top: 40px; ">
                     <ul class="social list-unstyled" style="display: flex; justify-content: space-between; ">
                         <li><a href="#"style="color: white;"><i class="fa fa-facebook-official" style="font-size:24px"></i></a></li>
                         <li><a href="#"style="color: white;"><i class="fa fa-twitter-square" style="font-size:24px"></i></a></li>
